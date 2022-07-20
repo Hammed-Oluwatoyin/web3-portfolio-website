@@ -2,6 +2,7 @@
     display: flex;
     height: 77vh;
     margin-top: 6rem;
+    width: 100vw;
 }
 
 
@@ -9,9 +10,11 @@
 .i-left {
     display: flex;
     position: relative;
-    flex: 1;
+    flex: 0.7;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+    
+    
 }
 
 .i-name {
@@ -23,13 +26,13 @@
 .i-name> :nth-child(1) {
     color: var(--black);
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .i-name> :nth-child(2) {
     color: var(--lightPurple);
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .i-name> :nth-child(3) {
@@ -40,8 +43,8 @@
 }
 
 .i-button {
-    width: 6rem;
-    height: 2rem;
+    width: 8rem;
+    height: 3rem;
 }
 
 .i-icons {
@@ -60,8 +63,10 @@
 
 /* right side styling */
 .i-right {
-    flex: 1;
+    flex: 0.7;
     position: relative;
+    height: 40vh;
+    
 }
 
 .i-right>* {
@@ -70,28 +75,25 @@
 }
 
 .i-right> :nth-child(1) {
-    transform: scale(0.69);
-    left: -15%;
-    top: -9%;
+    top: -1.6rem;
+    transform: scale(0.5);
+    left: 5rem;
+    border-radius: 50%;
 }
+ .i-right> :nth-child(2) {
+     
+     transform: scale(0.5);
+ }
 
-.i-right> :nth-child(2) {
-    top: -4.6rem;
-    transform: scale(0.67);
-    left: -3rem;
-}
-
-.i-right> :nth-child(3) {
-    transform: scale(1.4);
-    left: 28%;
-}
+ .i-right> :nth-child(3) {
+    left: 350px; 
+    top:100px;  
+    
+} 
 
 .i-right> :nth-child(4) {
-    transform: scale(0.62);
-    top: -19%;
-    left: -24%;
-    border-radius: 50%;
-    padding: 0;
+  top :370px;
+    left: 40px;
 }
 
 /* blur */
@@ -100,10 +102,10 @@
     width: 22rem;
     height: 14rem;
     border-radius: 50%;
-    background: #edd0ff;
+    background-color: var(--lightPurple);
     filter: blur(212px);
-    z-index: -9;
-    top: -18%;
+    z-index: 0;
+    top: 18%;
     left: 56%;
     filter: blur(72px);
 }

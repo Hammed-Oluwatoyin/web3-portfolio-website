@@ -14,8 +14,9 @@
 .App{
     padding: 0.5rem 3.5rem;
     overflow: hidden;
-    color: var(--black);    
-    
+    color: var(--black);  
+      
+    z-index: -5;
     
 }
 
@@ -26,7 +27,7 @@
   border: none;
   color: white;
   font-size: 16px;
-  padding: 11px 26px 11px 26px;
+  padding: 11px 26px 14px 26px;
 }
 
 .button:hover {
