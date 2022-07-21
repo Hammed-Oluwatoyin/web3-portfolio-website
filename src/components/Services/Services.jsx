@@ -21,7 +21,7 @@ const Services = () => {
           friend,
         </span>
         <a href = {Resume} download>
-          <button className="button s-button"> Download CV</button>
+          <button className="s-button button">Download CV </button>
         </a>
       </div>
       {/* right side */}
