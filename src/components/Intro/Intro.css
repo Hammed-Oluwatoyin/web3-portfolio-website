@@ -96,16 +96,3 @@
     left: 40px;
 }
 
-/* blur */
-.blur {
-    position: absolute;
-    width: 22rem;
-    height: 14rem;
-    border-radius: 50%;
-    background-color: var(--lightPurple);
-    filter: blur(212px);
-    z-index: 0;
-    top: 18%;
-    left: 56%;
-    filter: blur(72px);
-}

@@ -35,10 +35,12 @@
     margin-top: 1rem;
 }
 
+a {width : 10rem;}
+
 a > .s-button {
     width: 10rem;
     height: 4rem;
-    margin-top: 3rem;
+    
 }
 
 /* right sided */
@@ -69,7 +71,7 @@ a > .s-button {
 }
 
 /* blur */
-.s-blur2 {
+/* .s-blur2 {
 width: 22rem;
     height: 19rem;
     border-radius: 50%;
@@ -85,4 +87,4 @@ width: 22rem;
     top: 13rem;
     left: -18rem;
     background-color: var(--lightPurple);
-}
+} */
