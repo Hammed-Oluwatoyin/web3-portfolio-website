@@ -12,12 +12,20 @@
 }
 
 .App{
-    padding: 0.5rem 3.5rem;
+    
     overflow: hidden;
     color: var(--black);  
-      
+      background-color: black;
     z-index: -5;
     
+}
+
+.without_footer{
+  padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    color: var(--black);
+  
+    z-index: -5;
 }
 
 .button {

@@ -1,0 +1,5 @@
+.footer {
+    width: 100vw;
+    height: 40vh;
+    background-image: linear-gradient(to bottom, #ffc05a 0%, var(--lightPurple) 100%);
+}
