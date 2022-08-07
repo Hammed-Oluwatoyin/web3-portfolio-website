@@ -72,6 +72,10 @@
     justify-content: center;
 }
 
+.t-wrapper .swiper-pagination-bullet{
+    background: var(--gray);
+}
+
 .t-wrapper .swiper-pagination-bullet-active {
-    background: var(--orangeCard);
+    background: var(--lightPurple);
 }

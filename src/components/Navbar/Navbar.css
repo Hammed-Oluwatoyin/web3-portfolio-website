@@ -49,6 +49,11 @@
     flex: 2;
 }
 
+.n-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 480px) {
     .n-list {
         display: none;

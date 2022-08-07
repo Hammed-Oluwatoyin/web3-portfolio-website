@@ -1,9 +1,16 @@
 import React from 'react'
 import "./Contact.css";
+import Github from "../../img/github.png";
+import LinkedIn from "../../img/linkedin.png";
+import Instagram from "../../img/instagram.png";
+import Twitter from "../../img/twitter.png";
+
 import emailjs from "@emailjs/browser";
 import {useRef, useState} from "react"
 
+
 const Contact = () => {
+  
  const form = useRef();
   const [done, setDone] = useState(false)
   const sendEmail = (e) => {
@@ -30,7 +37,8 @@ const Contact = () => {
 
   return (
     <div className="contact-form">
-        <div className="w-left">
+      <div className="contact-top-part">
+          <div className="w-left">
             <div className="awesome">
                 <span>Get In Touch</span>
                 <span> Contact Me </span>
@@ -50,7 +58,29 @@ const Contact = () => {
             style={{ background: "var(--purple)" }}
           ></div>
         </form>
+         
+
         </div>
+
+      </div>
+        <span>dauda.hammed132@gmail.com</span>
+       
+        
+         <div className="contact-bottom-part">
+            <img src={Github} alt="" />
+                <img src={LinkedIn} alt="" />
+                <img src={Instagram} alt="" />
+                 <img src={Twitter} alt="" />
+        </div>
+          <div className="copyright">
+          <span>@2020 DAUDA HAMMED OLUWATOYIN</span>
+          <span>ALL RIGHT RESERVED</span>
+        </div>
+       
+
+      
+      
+        
 
     </div>
   )

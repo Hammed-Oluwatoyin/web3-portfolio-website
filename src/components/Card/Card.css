@@ -8,7 +8,7 @@
     z-index: 2;
     align-items: center;
     text-align: center;
-    background: rgba(255, 255, 255, 0.26);
+    background-color: rgba(230, 229, 236, 0.956);
     border: 7px solid var(--lightPurple);
     box-shadow: var(--boxShadow);
     border-radius: 20px;

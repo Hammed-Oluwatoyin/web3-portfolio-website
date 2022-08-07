@@ -2,7 +2,7 @@
 {
   --lightPurple: #7e68ec;
     --darkPurple : #2b2259;
-    --black : #242D49;
+    --black : #000000;
     --gray : #788097;
     --blueCard : #DDF8FE;
     --purple: rgb(238 210 255);
@@ -14,23 +14,18 @@
 .App{
     
     overflow: hidden;
-    color: var(--black);  
-      background-color: black;
+    color:#7e68ec;
+    
     z-index: -5;
+    padding: 0.5rem 3.5rem;
     
 }
 
-.without_footer{
-  padding: 0.5rem 3.5rem;
-    overflow: hidden;
-    color: var(--black);
-  
-    z-index: -5;
-}
+
 
 .button {
   background: linear-gradient(180deg, var(--lightPurple) 26.71%, #2b2259 99.36%);
-  box-shadow: 0px 20px 24px 3px rgba(50, 12, 242, 0.42);
+  box-shadow: 0px 20px 24px 3px #320cf26b;
   border-radius: 34px;
   border: none;
   color: white;

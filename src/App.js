@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import Intro from "./components/Intro/Intro";
@@ -8,23 +8,26 @@ import Works from "./components/Works/Works";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
+import { themeContext } from "./Context/context";
 
 function App() {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="App">
-      <div className="without_footer">
-        <Navbar />
-        <Intro />
-        <Services />
-        <Experience />
-        <Works />
-        <Portfolio />
-        <Testimonials />
-        <Contact />
-      </div>
-
-      <Footer />
+    <div
+      className="App"
+      style={{
+        background: darkMode ? "#000000" : "#ffffff",
+      }}
+    >
+      <Navbar />
+      <Intro />
+      <Services />
+      <Experience />
+      <Works />
+      <Portfolio />
+      <Testimonials />
+      <Contact />
     </div>
   );
 }
