@@ -5,10 +5,12 @@ import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Card from "../Card/Card";
 import Resume from "./Hammed-Resume.pdf"
+import {motion}  from "framer-motion"
 
 const Services = () => {
+   const transition ={ duration: 1, type: "spring"}
   return (
-    <div className="services">
+    <div className="services" id="Services">
       {/* left side */}
       <div className="awesome">
         <span>My Awesome</span>
@@ -27,29 +29,37 @@ const Services = () => {
       {/* right side */}
       <div className="cards">
         {/*1st Card */}
-        <div>
+        <motion.div
+          whileInView ={{left: "25rem"}}
+          Initial={{left: "40%"}}
+          transition={{transition}}
+          >
           <Card
             emoji={Glasses}
             heading={"Smart Contract Development"}
             detail={"Solidity, Metamask, Ganache, Truffle, Remix"}
           />
-        </div>
+        </motion.div>
         {/*2nd Card */}
-        <div>
+        <motion.div  initial={{ left: "20rem", top: "12rem" }}
+          whileInView={{ left: "1rem" }}
+          transition={transition}>
           <Card
             emoji={HeartEmoji}
             heading={" UI/UX Development"}
             detail={"React, Redux, Typescript, Sass"}
           />
-        </div>
+        </motion.div>
         {/*3rd Card */}
-        <div>
+        <motion.div   initial={{ top: "30rem", left: "5rem" }}
+          whileInView={{ left: "22rem" }}
+          transition={transition}>
           <Card
             emoji={Humble}
             heading={"Blockchain Development"}
             detail={"Ethereum, Solana, Polkadot, Avalanche, Polygon"}
           />
-        </div>
+        </motion.div>
         <div className="s-blur2"></div>
       </div>
     </div>

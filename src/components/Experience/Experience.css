@@ -3,13 +3,14 @@
     align-items: center;
     justify-content: center;
     gap: 15rem;
-    height: 30vh;
-    margin-bottom: 8rem;
+    
+    margin-bottom: 12rem;
     /* darkmode */
     color: var(--black);
 }
 
 .achievement {
+    margin-top: 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;

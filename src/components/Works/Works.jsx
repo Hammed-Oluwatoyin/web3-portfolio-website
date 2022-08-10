@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Works.css";
+
+import { motion } from "framer-motion";
 import Upwork from "../../img/Upwork.png";
 import Fiverr from "../../img/fiverr.png";
 import Amazon from "../../img/amazon.png";
@@ -37,7 +39,12 @@ const Works = () => {
         </div>
             {/*right-side*/}
          <div className="w-right">
-            <div className="w-mainCircle"> <div className="w-secCircle">
+            <motion.div
+             initial={{ rotate: 45 }}
+          whileInView={{ rotate: 10 }}
+          viewport={{ margin: "-40px" }}
+          transition={{ duration: 3.5, type: "spring" }}
+             className="w-mainCircle"> <div className="w-secCircle">
             <img src={Upwork} alt="" />
           </div>
           <div className="w-secCircle">
@@ -51,7 +58,7 @@ const Works = () => {
           </div>
           <div className="w-secCircle">
             <img src={Facebook} alt="" />
-          </div></div>
+          </div></motion.div>
       
          
         
